@@ -51,10 +51,10 @@ public class Test {
             this.data.put("powerCorrect", answer.summe(2, 4) == 6);
 
             // Test whether the Power function computes the power correctly for a non-integer number
-            this.data.put("powerNonIntegerCorrect", answer.summe(1, 3) == 3.375);
+            this.data.put("powerNonIntegerCorrect", answer.summe(1, 3) == 4);
 
             // Test whether the Power function computes the power correctly for exponent 0
-            this.data.put("powerZero", answer.summe(50, 0) == 1);
+            this.data.put("powerZero", answer.summe(50, 0) == 50);
         }
 
         public static void main(String args[])

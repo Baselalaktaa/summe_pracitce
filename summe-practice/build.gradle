@@ -1,9 +1,12 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'org.example'
 version '1.0-SNAPSHOT'
+
+mainClassName = 'Test'
 
 repositories {
     mavenCentral()
@@ -14,8 +17,4 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     compile "com.googlecode.json-simple:json-simple:1.1.1"
     testCompile "junit:junit:4.12"
-}
-
-test {
-    useJUnitPlatform()
 }
